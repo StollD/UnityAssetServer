@@ -1,0 +1,18 @@
+{
+    "host": "127.0.0.1",
+    "port": 2346,
+    "versions": [
+        "2017.1.3p1"
+    ],
+    "modes": {
+        "flare": {
+            "dir": "/opt/UnityAssetServer/unity/{UNITY}",
+            "files": {
+                "Flare.flare": "Assets/Editor/Flare/Flare.flare",
+                "Flare.png": "Assets/Editor/Flare/Flare.png"
+            },
+            "output": "Assets/Editor/Flare/Flare.unity3d",
+            "command": "FlareAsset.Build"
+        }
+    }
+}
