@@ -77,7 +77,7 @@ func build(c echo.Context) error {
         }
 
         // Save the file to its destination
-        dest, err := os.OpenFile(filepath.Join(directory, path), os.O_CREATE | os.O_WRONLY, 0644)
+        dest, err := os.Create(filepath.Join(directory, path))
         if err != nil {
             return err
         }
